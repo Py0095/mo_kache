@@ -20,9 +20,10 @@ samples, guidance on mobile development, and a full API reference.
 -------Membre groupe la---------
 
 
-Aliano CHARLES \n
-wisner Aurelus \n
-Bastien Jean Ritchy \n
-Blemy Mathieu \n
-Clivince Estinvil \n
-Daniel Florestal
+# Aliano CHARLES \n
+
+# wisner Aurelus \n
+# Bastien Jean Ritchy \n
+# Blemy Mathieu \n
+# Clivince Estinvil \n
+# Daniel Florestal
