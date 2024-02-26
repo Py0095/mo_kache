@@ -10,6 +10,7 @@ void main() {
   runApp(MyApp()); // Fonksyon main pou lanse aplikasyon an.
 }
 
+//--------------------------------------------------------------------------------------------------
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,11 +21,16 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+
+//--------------------------------------------------------------------------------------
 class HangmanGame extends StatefulWidget {
   @override
   _HangmanGameState createState() => _HangmanGameState();
 }
 
+
+//--------------------------------------------------------------------------------------------------------
 class _HangmanGameState extends State<HangmanGame> {
   final List<String> qwertyKeyboardCharacters = [ // List ki gen karakter klavye QWERTY la.
     'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G',
@@ -227,6 +233,8 @@ class _HangmanGameState extends State<HangmanGame> {
   }
 }
 
+
+//--------------------------------------------------------------------------------
 class SecondeHome extends StatelessWidget {
   final bool victory; // Si jwè a genyen oswa pa.
   final VoidCallback onResetGame; // Fonksyon pou rekòmanse jwèt la.
@@ -276,6 +284,7 @@ class SecondeHome extends StatelessWidget {
 }
 
 
+//-------------------------------------------------------------
 class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
