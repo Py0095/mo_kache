@@ -7,6 +7,7 @@ void main() {
   runApp(MyApp());
 }
 
+//--------------------------------------------------------------------------------------------------
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,11 +18,16 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+
+//--------------------------------------------------------------------------------------
 class HangmanGame extends StatefulWidget {
   @override
   _HangmanGameState createState() => _HangmanGameState();
 }
 
+
+//--------------------------------------------------------------------------------------------------------
 class _HangmanGameState extends State<HangmanGame> {
   final List<String> qwertyKeyboardCharacters = [
     'Q',
@@ -252,6 +258,8 @@ class _HangmanGameState extends State<HangmanGame> {
   }
 }
 
+
+//--------------------------------------------------------------------------------
 class SecondeHome extends StatelessWidget {
   final bool victory;
   final VoidCallback onResetGame;
@@ -302,6 +310,7 @@ class SecondeHome extends StatelessWidget {
 }
 
 
+//-------------------------------------------------------------
 class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
