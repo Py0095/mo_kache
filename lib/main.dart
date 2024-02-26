@@ -63,31 +63,9 @@ class _HangmanGameState extends State<HangmanGame> {
     displayedWord = '*' * hiddenWord.length;
     wordHint = selectedWord.values.first;
   }
+//----------------------------------------
 
-  void checkGameStatus() { // Fonksyon pou tcheke estati jwèt la.
-    if (chancesLeft <= 0) { // Si pa gen plis chans.
-      Navigator.pushReplacement( // Fè yon chanjman nan pwochen paj la.
-        context,
-        MaterialPageRoute(
-          builder: (context) => SecondeHome(
-            victory: false,
-            onResetGame: resetGame, // Pase fonksyon resetGame la.
-          ),
-        ),
-      );
-    } else if (displayedWord == hiddenWord) { // Si jwè a genyen.
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => SecondeHome(
-            victory: true,
-            onResetGame: resetGame, // Pase fonksyon resetGame la.
-          ),
-        ),
-      );
-    }
-  }
-
+//------------------------------wisner
   void checkLetter(String letter) { // Fonksyon pou tcheke lèt ki chwazi.
     setState(() {
       if (!gameOver) { // Si jwè a poko fini jwèt la.
