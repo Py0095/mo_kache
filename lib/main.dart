@@ -64,8 +64,24 @@ class _HangmanGameState extends State<HangmanGame> {
     wordHint = selectedWord.values.first;
   }
 //----------------------------------------
-
-//------------------------------wisner
+void checkGameStatus() {
+  if (chancesLeft <= 0) {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => SecondeHome(victory: false),
+      ),
+    );
+  } else if (displayedWord == hiddenWord) {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => SecondeHome(victory: true),
+      ),
+    );
+  }
+}
+//------------------------------
   void checkLetter(String letter) { // Fonksyon pou tcheke lèt ki chwazi.
     setState(() {
       if (!gameOver) { // Si jwè a poko fini jwèt la.
